@@ -1,0 +1,115 @@
+<!-- Mendeskripsikan bahwa file ini adalah HTML -->
+<!DOCTYPE html>
+<html>
+
+<!-- Head Berisi info tentang halaman -->
+<head>
+    <!-- title ini akan muncul di tab broses -->
+    <title>TSWL | Modern Slingbag</title>
+    <!-- 
+        Memanggil css dari file external, 
+        dalam kasus ini letaknya di folder assets/apps 
+    -->
+    <link rel="stylesheet" type="text/css" href="assets/app.css"> 
+</head>
+
+<!-- Body berisi apa saja yang nanti ditampilkan Ke user-->
+<body>
+    <!-- header adalah fitur html 5
+    yang biasanya untuk kerangka halaman bagian atas -->
+    <header>
+        <!-- Menggunakan elemen heading h1,
+            heading semakin banyak angka, ukuran semakin kecil -->
+        <h1>TSWL Slingbag</h1> 
+    </header>
+
+    <!-- nav juga tag html5
+        Digunakan untuk membuat kerangka yang ditempati menu  -->
+    <nav class="menu-row">
+        <!-- Menggunakan link dengan atribut href
+            href menentukan kemana akan berpindah halaman -->
+        <a href="index.html" class="menu-item active">Home</a> 
+        <div class="dropdown">
+            <a href="#" class="menu-item dropdown-toggle">kategori</a>
+            <div class="dropdown-menu">
+                <a href="#">Slingbag</a>
+                <a href="#">Ransel</a>
+                <a href="#">Sporty</a>
+            </div>
+        </div>
+        <a href="contact.html" class="menu-item">kontak Kami</a>
+    </nav>
+    
+    <!-- main di definisikan sebagai bagian utama dalam konten website -->
+    <main>
+        <!-- Div dengan class hero untuk media promosi
+            Div ini adalah kotak yg bebas diisi apa saja -->
+        <div class="hero transparent">
+            <!-- heading H2, ukuran lebih kecil dari h1 -->
+            <h2>TSWL Official Store</h2>
+            <!-- p untuk paragraf -->
+            <!-- span adalah bagian kecil yg biasanya digunakan untu part2 kecil dalam sebuah tulisan, bisa diberi style css  -->
+            <p>Toko Resmi Brand TSWL di Platform <span class="font-italic">Online</span><br><br>
+
+                OPEN ORDER EVERYDAY<br>
+                Jam Operasional : Senin-Sabtu (07.00 - 21.00)<br>
+                Pengiriman : Senin-Sabtu, Order dibawah <span class="font-italic">jam 15.00 </span>akan di kirim di hari yang sama.<br> 
+                Untuk Metode Pembayaran COD silahkan pilih <span class="font-italic">Jasa Kirim J&T.</span><br>
+                Nikmati Berbagai Promo Voucher & Diskon dari kami, Selamat berbelanja mates</p>
+        </div>
+    
+        <!-- div class products bertindak sebagai container dari class product -->
+        <div class="products transparent">
+            <!-- masing2 class product mewakili 1 product -->
+            <div class="product">
+                <div class="img-container">
+                    <!-- Menampilkan gambar dengan elemen img -->
+                    <img src="img/1-1.jpeg" alt="Product 1"> 
+                </div>
+    
+                <!-- heading dengan ukuran lebih kecil dari h2 -->
+                <h3>LA LUNE</h3>
+                <p>Bahan: Kami menggunakan bahan berkualitas tinggi, seperti kulit sintetis yang tahan lama dan tampilan elegan. 
+                    Material ini dipilih untuk memberikan sentuhan premium pada slingbag, 
+                    sambil memastikan ketahanan dan keawetan dalam penggunaan sehari-hari.</p>
+                <span class="price">Rp 89.000</span>
+                <div>
+                    <!-- Menggunakan link dengan atribut href dan kelas CSS -->
+                    <a href="product-detail-1.html" class="btn">Lihat Detail</a> 
+                </div>
+            </div>
+
+            <!-- ini product ke 2 -->
+            <div class="product">
+                <div class="img-container">
+                    <img src="img/2-1.jpeg" alt="Product 2">
+                </div>
+                <h3>Beliya Indi Bag</h3>
+                <p>Bahan: Kami menggunakan bahan berkualitas tinggi, seperti kulit sintetis yang tahan lama dan tampilan elegan. 
+                    Material ini dipilih untuk memberikan sentuhan premium pada slingbag, 
+                    sambil memastikan ketahanan dan keawetan dalam penggunaan sehari-hari.</p>
+                    <span class="price">Rp 89.000</span><br>
+                    <a href="product-detail-2.html" class="btn">Lihat Detail</a>
+            </div>
+
+            <!-- ini product ke 3 -->
+            <div class="product">
+                <div class="img-container">
+                    <img src="img/3-1.jpeg" alt="Product 3">
+                </div>
+                <h3>TSWL slingbag</h3>
+                <p>Bahan: Kami menggunakan bahan berkualitas tinggi, seperti kulit sintetis yang tahan lama dan tampilan elegan. 
+                    Material ini dipilih untuk memberikan sentuhan premium pada slingbag, 
+                    sambil memastikan ketahanan dan keawetan dalam penggunaan sehari-hari.</p>
+                    <span class="price">Rp 89.000</span><br>
+                <a href="product-detail-3.html" class="btn">Lihat Detail</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer mendeskripsikan halaman website yg terletak di bagian paling bawah -->
+    <footer>
+        <p>&copy; 2023 TSWL Mufiddin. All rights reserved.</p>
+    </footer>
+</body>
+</html>

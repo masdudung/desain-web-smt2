@@ -1,0 +1,89 @@
+<!-- 
+    Tidak ada banyak perbedaan dalam file ini 
+    semua keterangan ada di file index.html 
+
+    ** tambahan, ada keterangan form
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TSWL | Modern Slingbag</title>
+    <link rel="stylesheet" type="text/css" href="assets/app.css">
+</head>
+<body>
+    <header>
+        <h1>TSWL Slingbag</h1>
+    </header>
+
+    <nav class="menu-row">
+        <a href="index.html" class="menu-item">Home</a>
+        <div class="dropdown">
+            <a href="#" class="menu-item dropdown-toggle">kategori</a>
+            <div class="dropdown-menu">
+                <a href="#">Slingbag</a>
+                <a href="#">Ransel</a>
+                <a href="#">Sporty</a>
+            </div>
+        </div>
+        <a href="contact.html" class="menu-item active">kontak Kami</a>
+    </nav>
+
+    <main>
+        <div class="hero transparent">
+            <h2>TSWL Official Store</h2>
+            <p>Toko Resmi Brand TSWL di Platform <span class="font-italic">Online</span></p>
+        </div>
+    
+        <div class="products transparent-9">
+            <div class="product-contact">
+                <div class="left">
+                    <h2>OPEN ORDER EVERYDAY</h2><br>
+                        Jam Operasional : Senin-Sabtu (07.00 - 21.00)<br>
+                    </p>
+                    <img class="maps" src="img/maps.png" /><br>
+                    <p>Pengiriman : Senin-Sabtu, Order dibawah <span class="font-italic">jam 15.00 </span>akan di kirim di hari yang sama.<br> 
+                        Untuk Metode Pembayaran COD silahkan pilih <span class="font-italic">Jasa Kirim J&T.</span><br><br>
+                        Nikmati Berbagai Promo Voucher & Diskon dari kami, Selamat berbelanja mates</p>
+                </div>
+                <div class="right">
+                    <h2>Hubungi kami</h2>
+                    <!-- Form digunakan untuk mengisi / menyiapkan data dari sisi frontend, 
+                    yg kemudian akan dikirimkan ke backend dengan method tertentu
+
+                    method yg umum digunakan adalah GET POST PUT PATCH dan DELETE
+                    masing2 mempunyai perbedaan pada fungsi dan penggunaan. 
+
+                    Pada kasus ini form menggunakan method post, karena data yg dikirimkan tidak perlu di tampilkan pada URL
+                    action fungsinya untuk mendeskripsikan kemana data akan di kirim, misal route tertentu atau nama file .php, .asp dll -->
+                    <form action="#" method="post">
+                        <!-- label sesuai fungsinya untuk menampilkan keterangan text -->
+                        <label for="name">Nama</label>
+                        <!-- input ada beberapa macam,
+                        kasus ini mengunakan type text untuk memberikan isian plaintext biasa. 
+                        name digunakan untuk nama parameter yg nantinya di pakai oleh backend untuk mendapatkan isi dari input text ini
+                        placeholder adalah isian sementara sebagai petunjuk, ketika user mengetikkan sesuatu, placeholder ini akan hilang dan berganti tulisan asli 
+                        required adalah fitur html5 untuk validasi bahwa inputan ini wajib diisi -->
+                        <input type="text" name="nama" placeholder="Nama Kamu.." required>
+                    
+                        <label for="email">Email</label>
+                        <!-- input type email adalah fitur html5
+                        digunakan untuk menyiapkan isisan email beserta validasi dari sisi html -->
+                        <input type="email" name="email" placeholder="email.." required>
+                    
+                        <label for="pesan">Pesan</label>
+                        <textarea id="message" name="pesan" placeholder="tulis sesuatu.." required></textarea>
+                    
+                        <!-- input dengan type submit berperan sebagai triger untuk mengirimkan data di form kepada backend -->
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 TSWL Mufiddin. All rights reserved.</p>
+    </footer>
+</body>
+</html>

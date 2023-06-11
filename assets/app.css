@@ -1,0 +1,326 @@
+/* secara default ketika kita tidak memberikan style apa2 pada tag html
+browser akan otomatis memberikan style bawaan.
+disini kita akan mereset margin dan padding */
+html, body, header, h1, h2, p, a, img, div, figure {
+    /* margin adalah batas elemen dengan bagian luar nya */
+    margin: 0; 
+    /* padding adalah batas elemen dengan bagian dalam elemen tersebut */
+    padding: 0;
+}
+
+
+/* ini akan memberikan style pada semua tag yg punya class trasparent */
+.transparent {
+    /* memberikan background warna, value 0.75 adalah transparancy */
+    background-color: rgba(240, 240, 240, 0.75);
+}
+.transparent-9 {
+    background-color: rgba(240, 240, 240, 0.95);
+}
+
+/* efek: semua tag dengan class font-italic */
+.font-italic {
+    /* memberikan bentuk font miring */
+    font-style: italic;
+}
+
+/* efek: tag body */
+body {
+    /* memberikan background berupa image, dengan size cover (penuh1 halaman) */
+    background-image: url(../img/bg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* diposisikan tengah, dengan posisi -80px di bagian atas */
+    background-position: center calc(50% - 80px);
+    
+    /* mengatur jenis huruf, jarah antar huruf dan tinggi baris  */
+    font-family: sans-serif;
+    letter-spacing: 0.02em;
+    line-height: 1.7;
+}
+
+/* efek: tag header */
+header {
+    /* setting tinggi element */
+    height: 120px;
+    background-color: rgba(240, 240, 240, 0.0);
+    padding: 40px;
+    /* merubah posisi text pada tengah element */
+    text-align: center;
+}
+
+/* efek: semua tag dengan class menu-row */
+.menu-row {
+    background-color: rgba(238, 64, 49, 0.9);
+    /* display flex ini untuk mengatur tataletak element dalam sebuah container secara flexible dan responsive */
+    display: flex;
+    /* untuk titik kumpul element secara horizontal berada di tengah */
+    justify-content: center;
+    /* sama dengan atas, tapi secara vertikal */
+    align-items: center;
+}
+
+/* efek: semua tag dengan class .menu-item */
+.menu-item {
+    /* ukuran huruf, warna */
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+
+    /* display ini merubah mode box element, inline block berarti dia akan dibuat rangka kotak horizontal */
+    display: inline-block;
+    width: 100px;
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+}
+
+/* efek: ini akan memberikan style yg sama pada class .menu-item saat di hover dan class menu-item yg punya class active  */
+.menu-item:hover, .menu-item.active {
+    background-color: #CF4747;
+}
+
+/* efek: class hero */
+.hero {
+    background-color: rgba(240, 240, 240, 0.95);
+    padding: 40px;
+    text-align: center;
+}
+
+/* efek: semua tag h2 yg ada di dalam  class hero */
+.hero h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+/* efek: semua tag p yg ada di dalam  class hero */
+.hero p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* efek: semua tag dengan class products */
+.products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* mengatur wraping element ketika kontainer flex tidak cukup menampung banyak element */
+    flex-wrap: wrap;
+    padding: 20px 20px 80px 20px;
+}
+
+/* efek: semua tag dengan class product */
+.product {
+    width: 320px;
+    background-color: #f8f8f8;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* efek: semua tag html dengan class img-container yang posisinya ada di dalam class product  */
+.product .img-container {
+    /* overflow digunakan untuk behavior ketika element melebihi batas ukuran container */
+    overflow: hidden;
+    height: 230px;
+    margin-bottom: 10px;
+}
+
+/* efek: tag img yang posisinya ada di dalam class product  */
+.product img {
+    height: 350px;
+    margin-top: -60px;
+}
+
+/* efek: tag h3 yang posisinya ada di dalam class product  */
+.product h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* efek: tag p yang posisinya ada di dalam class product  */
+.product p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* efek: tag span yang punya class .price  */
+span.price {
+    color: #ce0000;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* efek: semua tag html dengan class btn */
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #EE4031;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+/* efek: semua tag html dengan class btn, :hover adalah event listener ketika elemen di sorot mouse */
+.btn:hover {
+    background-color: #CF4747;
+}
+
+/* efek: tag html dengan class product-contact*/
+.product-contact {
+    width: 1020px;
+    border-radius: 4px;
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* efek: tag html dengan class left, atau right yg letaknya ada di dalam class product-contact */
+.product-contact .left, .product-contact .right {
+    width: 490px;
+    padding: 20px;
+}
+
+/* efek: tag h2 yg ada di dalam class right dan didalam product-contact*/
+.product-contact .right h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* efek: semua elemen label yg ada di dalam form yg ada di dalam class right */
+.product-contact .right form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* efek: semua input type text, email dan textarea dalam tag form */
+.product-contact .right form input[type="text"],
+.product-contact .right form input[type="email"],
+.product-contact .right form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* efek: textarea di form dalam class right */
+.product-contact .right form textarea {
+    height: 100px;
+}
+
+/* efek: input type submit di form dalam class right  */
+.product-contact .right form input[type="submit"] {
+    background-color: #EE4031;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    /* membuat dekorasi bentuk pointer */
+    cursor: pointer;
+}
+
+/* efek: input type submit di form dalam class right ketika di sorot mouse */
+.product-contact .right form input[type="submit"]:hover {
+    background-color: #CF4747;
+}
+
+/* efek: semua class maps di dalam class product-contact */
+.product-contact .maps {
+    background-color: #f8f8f8;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    width: 430px;
+    padding: 8px;
+}
+
+/* membuat slider image */
+/* idenya adalah dalam 1 container (.slider) ada beberapa tag img
+tag img ditempatkan pada posisi yg sama menggunakan absolute
+dan secara default visibility di set 0 agar seolah2 tidak ada
+kemudian class active akan mengubah visibility menjadi 1 dengan efek transisi */
+.slider {
+    position: relative;
+    width: 450px;
+    height: 100%;
+    border: 1px solid #afafaf;
+    overflow: hidden;
+}
+
+.slider img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.slider img.active {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+/* efek: semua tag dengan class  btn-whatsapp*/
+.btn-whatsapp{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 70px;
+    background-color: #EE4031;
+}
+
+/* efek: semua tag img yg letaknya ada di dalam class  btn-whatsapp*/
+.btn-whatsapp img{
+    width: 25px;
+}
+
+/* efek: tag footer */
+footer {
+    margin-top: -10px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* menu dropdown */
+.dropdown {
+    position: relative;
+}
+
+/* modifikasi bentuk pointer jika masuk area tag ini */
+.dropdown-toggle {
+    cursor: pointer;
+}
+
+/* display none ini menyembunyikan semntara, 
+baru setelah di hover dia diubah jadi display block */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    min-width: 150px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.dropdown-menu a:hover {
+    background-color: #EF4F41;
+    color: #fff;
+}
